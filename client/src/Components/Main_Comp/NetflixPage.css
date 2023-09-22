@@ -1,0 +1,27 @@
+#netflix-wrapper{
+    overflow: hidden;
+}
+#netflix-wrapper .bg-img{
+    background-image: url(https://assets.nflxext.com/ffe/siteui/vlv3/fc164b4b-f085-44ee-bb7f-ec7df8539eff/d23a1608-7d90-4da1-93d6-bae2fe60a69b/IN-en-20230814-popsignuptwoweeks-perspective_alpha_website_large.jpg);
+    width: 100vw;
+    height: 100vh;
+    min-width: 150px;
+    min-height: 100vh;
+    z-index: -1;
+}
+.nf-log-logo{
+    position: absolute;
+    top: 0;
+    left: 40px;
+    overflow: hidden;
+    width: 200px;
+    height: 80px;
+}
+.nf-log-logo img{
+    position: absolute;
+    top: -10px;
+    left: 0;
+    width: 200px;
+    height: 100px;
+    box-shadow: inset 0 0 10px rgba(255, 255, 255, 0.5); /* Inner shadow effect */
+}

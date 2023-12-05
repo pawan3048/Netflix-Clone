@@ -5,13 +5,10 @@ const MainFooter = () => {
   return (
     <>
       <div className="main-footer">
-
         <div className="mn-ft-wp">
-
           <div className="call-item">
             <p>Questions? Call 000-800-919-1694</p>
           </div>
-
           <div className="footer-items">
             <ul className="inner-main">
               <li>
@@ -64,7 +61,8 @@ const MainFooter = () => {
                 <a href="#">Only on Netflix</a>
               </li>
             </ul>
-          </div>{/* footer items */}
+          </div>
+          {/* footer items */}
           <Language />
           <p className="default-ltr">Netflix India</p>
         </div>

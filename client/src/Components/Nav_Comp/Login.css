@@ -1,74 +1,83 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+.login-image {
+  position: absolute;
+  background-image: url(https://assets.nflxext.com/ffe/siteui/vlv3/855ed6e2-d9f1-4afd-90da-96023ec747c3/85eb5b91-25ed-4965-ace9-ba8e4a0ead8d/IN-en-20230828-popsignuptwoweeks-perspective_alpha_website_large.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: fit-content;
+  width: 100%;
 }
-.login-image{
-    background-image: url(https://assets.nflxext.com/ffe/siteui/vlv3/855ed6e2-d9f1-4afd-90da-96023ec747c3/85eb5b91-25ed-4965-ace9-ba8e4a0ead8d/IN-en-20230828-popsignuptwoweeks-perspective_alpha_website_large.jpg);
-    background-size: cover;
+.login-image .netflix-logo img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 250px;
+  height: 100px;
 }
-
-.help-sec .need-help{
-    
-    color: gray;
-    font-size: 12px;
-    position: absolute;
-    right: 0;
-    top: 2px;
+.help-sec {
+  display: flex;
+  align-items: center;
 }
-.login{
-    background-color: rgba(0, 0, 0, 0.75);
-    width: 500px;
-    margin: 40px auto;
-    height: 700px;
+.help-sec .need-help {
+  color: gray;
+  font-size: 12px;
+  position: absolute;
+  right: 0;
+  top: 2px;
 }
-.login .hybrid-login{
-    height: 100%;
-    padding: 25px 40px 50px 40px;
-    flex-grow: 100%;
+.login {
+  background-color: rgba(0, 0, 0, 0.75);
+  width: 500px;
+  margin: 0 auto;
+  height: 600px;
 }
-.login-h1{
-    color:#fff;
-    margin: 35px 0 25px 0;
+.login .hybrid-login {
+  margin: 50px auto;
+  padding: 25px 40px 50px 40px;
 }
-.login input{
-    background-color: #333;
-    border-radius: 4px;
-    color: #fff;
-    height: 50px;
-    line-height: 50px;
+.login-h1 {
+  color: #fff;
+  margin: 35px 0 25px 0;
 }
-.login a{
-    color: #fff;
-}
-.login span{
-    color: #ffffff;
-}
-
-#login-email, #login-password{
-    display: block;
-    margin: auto;
-    width: 350px;
-    height: 50px;
-    font-size: 20px;
-    padding: 0 10px;
-}
-.login button{
-    display: block;
-    margin: auto;
-    width: 350px;
-    height: 50px;
-    font-size: 20px;
-    background-color: red;
-    color: #ffffff;
-    border-radius: 10px;
+.login input {
+  background-color: #333;
+  border-radius: 4px;
+  color: #fff;
+  height: 50px;
+  line-height: 50px;
 }
 
-.signup-link{
-    margin-top: 50px;
+.login a {
+  color: #fff;
 }
-.login .recap{
-    color: gray;
-    font-size: 12px;
-    margin-top: 20px;
+.login span {
+  color: #ffffff;
+}
+
+#login-email,
+#login-password {
+  display: block;
+  margin: auto;
+  width: 350px;
+  height: 50px;
+  font-size: 20px;
+  padding: 0 10px;
+}
+.login button {
+  display: block;
+  margin: auto;
+  width: 350px;
+  height: 50px;
+  font-size: 20px;
+  background-color: red;
+  color: #ffffff;
+  border-radius: 10px;
+}
+.signup-link {
+  margin-top: 50px;
+}
+.login .recap {
+  color: gray;
+  font-size: 12px;
+  margin-top: 20px;
 }

@@ -5,7 +5,12 @@ const NetflixPage = () => {
   return (
     <>
       <div id="netflix-wrapper">
-      <div className="nf-log-logo"><img src="https://www.edigitalagency.com.au/wp-content/uploads/Netflix-logo-red-black-png.png" alt="Netflix" /></div>
+        <div className="nf-log-logo">
+          <img
+            src="https://www.edigitalagency.com.au/wp-content/uploads/Netflix-logo-red-black-png.png"
+            alt="Netflix"
+          />
+        </div>
 
         <div className="bg-img">
           <Footer />

@@ -1,193 +1,252 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+.bf-log-logo {
+  position: absolute;
+  top: 0;
+  left: 40px;
+  overflow: hidden;
+  width: 200px;
+  height: 80px;
 }
-.bf-log-logo{
-    position: absolute;
-    top: 0;
-    left: 40px;
-    overflow: hidden;
-    width: 200px;
-    height: 80px;
+.bf-log-logo img {
+  position: absolute;
+  top: -10px;
+  left: 0;
+  width: 200px;
+  height: 100px;
+  box-shadow: inset 0 0 10px rgba(255, 255, 255, 0.5); /* Inner shadow effect */
 }
-.bf-log-logo img{
-    position: absolute;
-    top: -10px;
-    left: 0;
-    width: 200px;
-    height: 100px;
-    box-shadow: inset 0 0 10px rgba(255, 255, 255, 0.5); /* Inner shadow effect */
+.Home-Wrapper {
+  width: 100vw;
+  min-width: 300px;
+  height: 100vh;
 }
-.Home-Wrapper .black-shadow{
-    z-index: 2;
-    background-color: rgba(0, 0, 0, 0.75);
-    max-width: 1519px;
+.Home-Wrapper .black-shadow {
+  background-color: rgba(0, 0, 0, 0.75);
+  min-width: 200px;
+  width: 100%;
+  margin: 0 auto;
+  height: 100%;
+  min-height: 500px;
+  position: relative;
+  top: 0;
+  left: 0;
+}
+.before-login {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-image: url("https://assets.nflxext.com/ffe/siteui/vlv3/fc164b4b-f085-44ee-bb7f-ec7df8539eff/d23a1608-7d90-4da1-93d6-bae2fe60a69b/IN-en-20230814-popsignuptwoweeks-perspective_alpha_website_large.jpg");
+  background-size: cover;
+  background-position: center;
+  min-width: 200px;
+  max-width: 100%;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  & div {
+    text-align: center;
+  }
+}
+.before-login::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: radial-gradient(rgba(255, 255, 255, 0.1), rgba(0, 0, 0, 0.8));
+  pointer-events: none;
+}
+.before-login .unlimited {
+  color: #ffffff;
+  font-size: 4rem;
+  font-weight: 800;
+  text-align: center;
+  line-height: 3rem;
+  z-index: 1;
+}
+.before-login .main-text {
+  text-align: center;
+  color: #ffffff;
+  z-index: -2;
+}
+.before-login .center-div {
+  margin-top: 175px;
+}
+.BeforeLogin-Wrapper .center-div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  max-width: 1280px;
+  margin: auto;
+  /* height: auto; */
+}
+.black-wrap {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  height: 600px;
+}
+
+.lang_and_sign_div {
+  display: flex;
+  align-items: center;
+  position: absolute;
+  right: 170px;
+}
+.signin-mini {
+  background-color: red;
+  color: #fff;
+  border-radius: 5px;
+  padding: 5px 10px;
+  & a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 16px;
+  }
+}
+.text-div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 100px 0;
+}
+.enjoy-wrap {
+  max-width: 650px;
+  height: 400px;
+}
+.enjoy-wrap .h1 {
+  line-height: 4pc;
+  font-weight: 900;
+  font-size: 50px;
+}
+.enjoy-wrap .h3 {
+  line-height: 2rem;
+  word-spacing: 2px;
+  font-size: 24px;
+}
+.enjoy-wrap .text {
+  color: #ffffff;
+  text-align: center;
+}
+.enjoy-wrap img {
+  width: 100%;
+  max-width: 525px;
+  height: auto;
+  margin: auto;
+  background-size: contain;
+}
+.watch {
+  font-size: 25px;
+  line-height: 3rem;
+}
+
+.gray-horizontal-strip {
+  width: 100%;
+  max-width: 100%;
+  height: 10px;
+  background-color: #232323;
+  border: none;
+}
+
+@media screen and (max-width: 850px) {
+  .Home-Wrapper {
+    height: 600px;
+  }
+  /* .Home-Wrapper .black-shadow {
     min-width: 200px;
+    width: 100%;
+    margin: 0 auto;
+    height: 100%;
+    min-height: 500px;
+  }*/
+  .black-wrap {
+    /* display: block; */
+    /* margin: 0 auto; */
+    height: 600px;
+  }
+  .before-login {
+    height: 600px;
+  }
+
+  .lang_and_sign_div {
+    right: 10px;
+  }
+  .before-login .unlimited {
+    font-size: 3rem;
+    line-height: 2.5rem;
+    margin-top: 40px;
+  }
+  .enjoy-wrap {
+    max-width: 400px;
+    width: 100%;
+    margin: 40px auto;
+    height: 200px;
+  }
+  .enjoy-wrap .text {
+    margin: 0 20px;
+  }
+  .enjoy-wrap ul {
+    padding: 20px 10px;
+    min-width: 250px;
+  }
+  .enjoy-wrap img {
+    width: 70%;
+    height: auto;
+  }
+  .enjoy-wrap .h1 {
+    font-size: 25px;
+    line-height: 2rem;
+  }
+  .enjoy-wrap .h3 {
+    font-size: 14px;
+  }
+  .text-div {
+    padding: 0;
+  }
+}
+@media screen and (max-width: 440px) {
+  .bf-log-logo {
+    left: 0;
+  }
+  .bf-log-logo img {
+    top: 0;
+    width: 100px;
+    height: 50px;
+  }
+  .before-login .unlimited {
+    font-size: 20px;
+    line-height: 1.5rem;
+    margin-top: 70px;
+  }
+  .Home-Wrapper {
+    width: 100vw;
+    height: 100%;
+  }
+  .Home-Wrapper .black-shadow {
+    background-color: rgba(0, 0, 0, 0.75);
+    min-width: 200px;
+    width: 100%;
     margin: 0 auto;
     height: 100%;
     min-height: 500px;
     position: relative;
     top: 0;
     left: 0;
-}
-.before-login{
-    background-image: url('https://assets.nflxext.com/ffe/siteui/vlv3/fc164b4b-f085-44ee-bb7f-ec7df8539eff/d23a1608-7d90-4da1-93d6-bae2fe60a69b/IN-en-20230814-popsignuptwoweeks-perspective_alpha_website_large.jpg');
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    max-width: 1519px;
-    min-width: 200px;
-    width: 100%;
-    height: 100vh;
-    /* position: absolute; */
-}
-.before-login::before{
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
+  }
+
+  .before-login {
     height: 100%;
-    background: radial-gradient(rgba(255, 255, 255, 0.1), rgba(0, 0, 0, 0.8));
-    pointer-events: none;
-}
-.before-login .unlimited{
-    color: #ffffff;
-    font-size: 50px;
-    font-weight: 800;
-    text-align: center;
-    line-height: 3rem;
-    z-index: 1;
-}
-.before-login .main-text{
-    text-align: center;
-    color: #ffffff;
-}
-.BeforeLogin-Wrapper .center-div{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    width: 1280px;
-    height: 100vh;
-}
-.black-wrap{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 0 auto;
-    max-width: 1280px;
-    height: 600px;
-}
-.signin-mini:hover{
-    cursor: pointer;
-    background-color: blue;
-}
-.choose-lang{
-    display: flex;
-    align-items: center;
-    position: absolute;
-    right: 170px;
-}
-.BeforeLogin-Wrapper .signin-mini {
-    padding: 7px 20px;
-    font-size: 14px;
-    background-color: blue; 
-    border-radius: 5px; 
-    margin-left: 20px; 
-    color: #fff; 
-    border: none;
-}
-
-.text-div{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 100px 0;
-
-}
-.enjoy-wrap{
-    width: 650px;
-    height: 400px;
-}
-.enjoy-wrap .h1{
-    line-height: 4pc;
-    font-weight: 900;
-    font-size: 50px;
-}
-.enjoy-wrap .h3{
-    line-height: 2rem;
-    word-spacing: 2px;
-    font-size: 24px;
-}
-.enjoy-wrap .text{
-    color: #ffffff;
-    text-align: left;
-}
-.enjoy-wrap img{
-    width: 525px;
-    height: auto;
-    margin: auto;
-    background-size: contain;
-}
-
-.watch{
-    font-size: 25px;
-    line-height: 4rem;
-}
-
-
-.gray-horizontal-strip{
-    border: 4px solid #232323;
-}
-
-/* Toggle dropdown css here start */
-.know-about-netflix{
-    margin: 50px auto;
-    width: 1280px;
-}
-.know-about-netflix h1{
-    color: #fff;
-    text-align: center;
-    font-size: 50px;
-    line-height: 5rem;
-}
-.know-about-netflix .toggle{
-    margin: 10px auto;
-    background-color: #2D2D2D;
-    width: 1024px;
-    height: auto;
-}
-.know-about-netflix .toggle-btn{
-    padding: 0 28px;
-    height: 100%;
-    color: #fff;
-    position: absolute;
-    right: 0;
-}
-
-.know-about-netflix .toggle-header{
-    padding: 0 20px;
-    line-height: 4rem;
-    position: relative;
-    font-size: 28px;
-    color: #ffffff;
-    display: inline-block;
-    width: 1024px;
-    height: 70px;
-    border-bottom: 2px solid #000;
-    background-color: #2D2D2D;
-    cursor: pointer;
-    transition: background-color 0.3s ease-out, color 0.3s ease-out;
-}
-.toggle-header:hover{
-    background-color: #454545;
-}
-.toggle-content{
-    font-size: 20px;
-    color: #fff;
-    line-height: 1.8rem;
-    padding: 10px;
-    
+    max-height: 600px;
+    min-height: 400px;
+  }
+  .black-wrap {
+    display: block;
+  }
+  .watch {
+    margin-top: 10px;
+    font-size: 16px;
+    line-height: 1rem;
+  }
 }

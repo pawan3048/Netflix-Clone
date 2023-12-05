@@ -1,0 +1,77 @@
+/* Toggle dropdown css here start */
+.know-about-netflix {
+  margin: auto;
+  padding: 50px;
+  max-width: 1280px;
+  min-width: 200px;
+  width: 100%;
+}
+.know-about-netflix h1 {
+  color: #fff;
+  text-align: center;
+  font-size: 50px;
+  line-height: 5rem;
+}
+.know-about-netflix .toggle {
+  margin: 10px auto;
+  background-color: #2d2d2d;
+  max-width: 1280px;
+  min-width: 300px;
+  width: 100%;
+  height: auto;
+}
+.know-about-netflix .toggle-btn {
+  padding: 0 28px;
+  height: 100%;
+  color: #fff;
+  position: absolute;
+  right: 0;
+}
+
+.know-about-netflix .toggle-header {
+  padding: 0 20px;
+  line-height: 4rem;
+  position: relative;
+  font-size: 28px;
+  color: #ffffff;
+  display: inline-block;
+  max-width: 1280px;
+  min-width: 300px;
+  width: 100%;
+  height: 70px;
+  border-bottom: 2px solid #000;
+  background-color: #2d2d2d;
+  cursor: pointer;
+  transition: background-color 0.3s ease-out, color 0.3s ease-out;
+}
+.toggle-header:hover {
+  background-color: #454545;
+}
+.toggle-content {
+  min-width: 200px;
+  width: 100%;
+  font-size: 20px;
+  color: #fff;
+  line-height: 1.8rem;
+  padding: 10px;
+}
+
+@media screen and (max-width: 865px) {
+  .know-about-netflix h1 {
+    font-size: 24px;
+    line-height: 2rem;
+  }
+  
+  .know-about-netflix {
+    max-width: 1280px;
+    min-width: 200px;
+    width: 100%;
+    & .toggle-header{
+      font-size: 18px;
+    }
+    & .toggle-content{
+      font-size: 18px;
+    }
+  }
+}
+

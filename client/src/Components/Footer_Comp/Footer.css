@@ -1,15 +1,6 @@
-*{
-    letter-spacing: 0!important;
-}
 footer{
-    background-color: rgba(0, 0, 0, 0.75);
-    color: #757575;
-    font-size: 1em;
-    margin-top: 80px;
-    min-width: 190px;
-    padding-bottom: 20px;
-    position: relative;
-    width: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    margin-top: 100px;
 }
 .footer{
     max-width: 1000px;

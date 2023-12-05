@@ -36,12 +36,12 @@ nav a{
 nav a:hover{
     text-decoration: underline;
 }
-.login a{
+/* .login a{
     background-color: red;
     border: 1px solid #ffffff;
     margin: 0 20px 0 50px;
     border-radius: 10px;
-}
+ }  this css link with login PAge BUGG */
 @media screen and (max-width: 699px) and (min-width: 520px) {
 
 }

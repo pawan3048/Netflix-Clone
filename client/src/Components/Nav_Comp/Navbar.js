@@ -4,11 +4,18 @@ import { NavLink } from "react-router-dom";
 const Navbar = () => {
   return (
     <>
-      <nav style={{position:'static'}}>
+      <nav style={{ position: "static" }}>
         <img
           src="https://www.edigitalagency.com.au/wp-content/uploads/Netflix-logo-red-black-png.png"
-          alt="Netflix-logo" className="logo"/>
-        <input type="search" name="search" id="search" placeholder="Search..."/>
+          alt="Netflix-logo"
+          className="logo"
+        />
+        <input
+          type="search"
+          name="search"
+          id="search"
+          placeholder="Search..."
+        />
         <div className="nav-links">
           <NavLink to="/">Home</NavLink>
           <NavLink to="/about">About</NavLink>
@@ -20,7 +27,6 @@ const Navbar = () => {
             <NavLink to="/login">Login</NavLink>
           </span>
           <NavLink to="/signout">SignOut</NavLink>
-
         </div>
       </nav>
     </>
